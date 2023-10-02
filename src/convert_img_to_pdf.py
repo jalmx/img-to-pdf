@@ -1,9 +1,12 @@
-from os.path import sep, isdir, isfile
+#! /usr/bin/env python3
+
+import fnmatch
 from os import listdir
+from os.path import sep, isdir
 from pathlib import Path
 from sys import argv, exit
+
 from PIL import Image
-import fnmatch
 
 HELP = """
 Script to convert images to pdf
@@ -90,6 +93,7 @@ def cli():
 
 def main():
     cli()
+
 
 if __name__ == "__main__":
     main()
